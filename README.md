@@ -4,11 +4,11 @@
 
 Bu proje, otomobillerin yakıt tüketimini (MPG - Miles Per Gallon) tahmin etmek için çeşitli makine öğrenmesi algoritmalarını kullanmaktadır. UCI Machine Learning Repository'den alınan Auto MPG veri seti kullanılarak, arabaların fiziksel özelliklerine göre yakıt verimliliği tahmin edilmektedir.
 
-## 🎯 Proje Hedefi
+##  Proje Hedefi
 
 Bir otomobilin silindir sayısı, motor hacmi, beygir gücü, ağırlık, hızlanma, model yılı ve menşei bilgileri kullanılarak MPG (yakıt tüketimi) değerini tahmin etmek.
 
-## 📊 Veri Seti
+##  Veri Seti
 
 - **Kaynak**: [UCI Machine Learning Repository - Auto MPG Dataset](https://archive.ics.uci.edu/ml/datasets/auto+mpg)
 - **Örnek Sayısı**: 398
@@ -29,7 +29,7 @@ Bir otomobilin silindir sayısı, motor hacmi, beygir gücü, ağırlık, hızla
 | `origin` | Menşe (1:ABD, 2:Avrupa, 3:Japonya) | Kategorik |
 | `car_name` | Araba adı | String (kullanılmadı) |
 
-## 🛠️ Kullanılan Teknolojiler
+##  Kullanılan Teknolojiler
 
 - **Python 3.x**
 - **Kütüphaneler**:
@@ -51,7 +51,7 @@ auto-mpg-ml-project/
     └── auto-mpg.data         # Veri seti (otomatik indirilir)
 ```
 
-## 🚀 Kurulum ve Çalıştırma
+##  Kurulum ve Çalıştırma
 
 ### Google Colab'de Çalıştırma (Önerilen)
 
@@ -70,7 +70,7 @@ pip install pandas numpy matplotlib seaborn scikit-learn
 jupyter notebook
 ```
 
-## 🔍 Proje Adımları
+##  Proje Adımları
 
 ### 1. Veri Yükleme ve Ön İşleme
 - Veri setini UCI repository'den yükleme
@@ -115,7 +115,7 @@ Kullanılan metrikler:
 - **RMSE**: Ortalama karesel hata kökü
 - **MAE**: Ortalama mutlak hata
 
-## 📈 Sonuçlar
+##  Sonuçlar
 
 ### Model Performans Karşılaştırması
 
@@ -143,7 +143,7 @@ Kullanılan metrikler:
    - Modeller gerçek değerlere oldukça yakın tahminler üretiyor
    - Ortalama hata marjı ~1.7 MPG
 
-## 📊 Görselleştirmeler
+##  Görselleştirmeler
 
 Proje şu görselleştirmeleri içerir:
 - MPG dağılım grafikleri
@@ -153,7 +153,7 @@ Proje şu görselleştirmeleri içerir:
 - Residual (hata) grafikleri
 - Özellik önem sıralaması
 
-## 💡 Kullanım Örneği
+##  Kullanım Örneği
 
 ```python
 # Yeni bir araba için tahmin
@@ -164,7 +164,7 @@ prediction = gb_model.predict(new_car_scaled)[0]
 print(f"Tahmini MPG: {prediction:.2f}")
 ```
 
-## 🔧 Geliştirme Önerileri
+##  Geliştirme Önerileri
 
 - [ ] Hiperparametre optimizasyonu (GridSearchCV, RandomizedSearchCV)
 - [ ] Daha fazla feature engineering
@@ -173,7 +173,7 @@ print(f"Tahmini MPG: {prediction:.2f}")
 - [ ] Model deployment (Flask/Streamlit web uygulaması)
 - [ ] XGBoost, LightGBM gibi alternatif modeller
 
-## 🤝 Katkıda Bulunma
+##  Katkıda Bulunma
 
 Katkılarınızı memnuniyetle karşılıyoruz! Lütfen:
 1. Fork yapın
@@ -182,15 +182,15 @@ Katkılarınızı memnuniyetle karşılıyoruz! Lütfen:
 4. Branch'inizi push edin (`git push origin feature/YeniOzellik`)
 5. Pull Request oluşturun
 
-## 📝 Lisans
+##  Lisans
 
 Bu proje eğitim amaçlıdır ve serbestçe kullanılabilir.
 
-## 📧 İletişim
+##  İletişim
 
 Sorularınız için issue açabilir veya pull request gönderebilirsiniz.
 
-## 🙏 Teşekkürler
+##  Teşekkürler
 
 - UCI Machine Learning Repository - Veri seti için
 - scikit-learn topluluğu - Harika dokümantasyon için
